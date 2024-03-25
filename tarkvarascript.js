@@ -1,4 +1,6 @@
 function randomSyna(){
+    //esimese masiivi loomine
+    //sonad
     const synad=[
         'teostus',
         'algoritm',
