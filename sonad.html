@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Tarkvara sõnad</title>
     <script src="tarkvarascript.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Tarkvara sõnad</h1>
-<input type="button" value="juhuslik" onclick="randomSyna()">
-<br>
-<br>
-<div id="random-syna"></div>
-<label for="kontroll">Kirjuta sõna vene keeles</label>
-<input type="text" id="kontroll" oninput="answerSyna()">
-
-<div id="vastus"></div>
+<h1>Tarkvara Sõnad AKTARpv22</h1>
+<table>
+    <tr>
+        <td>
+            <input type="button" value="Juhuslik" onclick="randomSyna()">
+            <div id="random-sona"></div>
+        </td>
+        <td>
+            <input type="text" id="kontroll" onchange="answerSyna()">
+            <div id="vastus2"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Juhuslik" onclick="randomSynaRU()">
+            <div id="random-vene-sona"></div>
+        </td>
+        <td>
+            <input type="text" id="kontrollru" onchange="answerSynaRU()">
+            <div id="vastusru"></div>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
