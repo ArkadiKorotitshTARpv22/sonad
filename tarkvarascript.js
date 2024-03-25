@@ -28,7 +28,7 @@ function randomSyna(){
     //lisame html-lehele
     document.getElementById("random-syna").innerHTML=syna;
 }
-
+//teine funktsioon
 function answerSyna(){
     let syna=document.getElementById("random-syna")
     let answerbox=document.getElementById("kontroll")
