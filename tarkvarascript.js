@@ -1,3 +1,4 @@
+//eesti sõnad list
 const synad = [
     'teostus',
     'algorütm',
@@ -30,7 +31,7 @@ const synad = [
     'validerimine'
 ];
 
-
+//vene sõnad list
 const venesynad = [
     'реализация',
     'алгоритм',
@@ -63,20 +64,20 @@ const venesynad = [
     'подтверждение'
 ];
 
-
+//genereerib juhusliku eestikeelse sõna nimekirjast
 function randomSyna() {
     const juhuslikSyna = Math.floor(Math.random() * synad.length);
     const syna = synad[juhuslikSyna];
     document.getElementById("random-sona").innerHTML = syna;
 }
-
+//genereerib juhusliku venekeelse sõna nimekirjast
 function randomSynaRU() {
     const juhuslikSona = Math.floor(Math.random() * venesynad.length);
     const syna = venesynad[juhuslikSona];
     document.getElementById("random-vene-sona").innerHTML = syna;
 }
 
-
+//kontrollib eestikeelsete sõnade vastust
 function answerSyna() {
     const syna = document.getElementById("random-sona").innerText;
     const venesyna = document.getElementById("kontroll").value.toLowerCase();
@@ -90,7 +91,7 @@ function answerSyna() {
         document.getElementById("vastus2").style.color = "red"
     }
 }
-
+//kontrollib venekeelsete sõnade vastust
 function answerSynaRU() {
     const syna = document.getElementById("random-vene-sona").innerText;
     const eestisona = document.getElementById("kontrollru").value.toLowerCase();
